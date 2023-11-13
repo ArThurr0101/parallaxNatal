@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@font-face{
+    font-family: font1;
+    src: url(candy_cane/Candcu__.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #211f1f;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+}
+
+h1{
+    font-family: font1;
+}
+
+h2{
+    font-weight: 800;
+    color: #000;
+    
+}
+
+p{
+    margin-right: 5em;
+    padding-right: px;
+    text-align: center;
+    margin-left: 5em;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background: #4b4b4b;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 30px;
+    animation: surgir 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+}
+
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 2em;
+    font-family: font2;
+    background-color: #dfdfdf21;
+    border-radius: 8px;
+    color: #141010;
+}
+
+section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-shadow: 7px 7px 7px #00000097;
+    
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: #dfdbdb;
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: #f5deb3;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-shadow: 12px 10px 8px #00000097;
+    z-index: 50%;
+    background-blend-mode: #f5deb3 #800080 ;
+}
+
+u{
+    text-decoration-color: #f5deb3;
+
+}
+
+section.modulo.parallax::after{
+    content: "" ;
+    height: 100%;
+    width: 100%;
+    position: absolute;z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+
+
+
+
+
+
+
+section.modulo.parallax-1{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/02/13/01/winter-1791370_1280.jpg);
+}
+section.modulo.parallax-2{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-natal-com-bokeh-e-flocos-de-neve_1393-207.jpg);
+}
+section.modulo.parallax-3{
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/17/15/44/poinsettia-3024434_1280.jpg
+    );
+}
+
+@keyframes surgir {
+    from{
+        translate: -100vw 0;
+        color: rgb(0, 0, 0)
+    }
+
+    to{
+        translate: 0 0;
+        color: rgb(0, 0, 0);
+        opacity: 1;
+    }
+    
+}
+
+@media all and (max-width: 760px){
+    
+    section.modulo p{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+section.modulo.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2cm;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px #00000097;
+    z-index: 50%;
+}
+
+ section.modulo.content{
+    width: 90%;
+ }
+
+}
+    
+span{
+    color: #800080;
+    background-blend-mode: color;
+    background-blend-mode: #b9a683 #800080 ;
+}
+
+footer{
+    background-color: #d8d8d8;
+}
+
+
